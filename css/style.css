@@ -1,0 +1,95 @@
+body {
+  font-family: "Libre Baskerville", serif;
+  color: #40b78b;
+}
+
+div.jumbotron {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  background-image: url("../assets/acorn-tile-3.jpg");
+  background-attachment: fixed;
+}
+
+h1, h2, p {
+  margin-left: 5%;
+}
+
+h1 {
+  font-size: 7rem;
+  padding-top: 3%;
+  margin-bottom: 3%;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+
+header .byline {
+  font-size: 3.5rem;
+  margin-left: 5%;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 10vh;
+  border-bottom: 2px solid #b4e4d3;
+}
+
+nav ul {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #40b78b;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+section {
+  height: 90vh;
+}
+
+section#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.content-container {
+  width: 60%;
+}
+
+div.content-container p {
+  line-height: 1.2rem;
+}
+
+div.profile-photo {
+  background-image: url('../assets/guy-square.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 180px;
+  height: 180px;
+}
+
+section#portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b4e4d3;
+}
