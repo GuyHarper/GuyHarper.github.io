@@ -124,8 +124,8 @@ div.tiles-container {
 
 a.tile {
   border: 2px solid #fff;
-  min-width: 45%;
-  height: 45vh;
+  min-width: 47%;
+  height: 43vh;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
