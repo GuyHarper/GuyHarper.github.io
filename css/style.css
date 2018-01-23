@@ -18,14 +18,14 @@ h1, h2, p {
 
 h1 {
   font-size: 7rem;
-  padding-top: 3%;
-  margin-bottom: 3%;
+  padding-top: 3vh;
+  margin-bottom: 3vh;
   color: #fff;
 }
 
 h2 {
-  font-size: 3rem;
-  margin-bottom: 2%;
+  font-size: 3.5rem;
+  margin-bottom: 2vh;
 }
 
 header .byline {
@@ -40,6 +40,17 @@ nav {
   background-color: #fff;
   height: 10vh;
   border-bottom: 2px solid #b4e4d3;
+}
+
+div.navbar-bumper {
+  height: 10vh;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 nav ul {
@@ -62,13 +73,18 @@ a:hover {
 }
 
 section {
-  height: 90vh;
+  min-height: 100vh;
 }
 
 section#about {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+section#portfolio, section#contact {
+  padding-top: 10vh;
+  min-height: 80vh;
 }
 
 div.content-container {
@@ -88,8 +104,92 @@ div.profile-photo {
 }
 
 section#portfolio {
+  background-color: #b4e4d3;
+  color: #fff;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+section#portfolio h2 {
+  margin: 5vh 0 10vh 0;
+  text-align: center;
+}
+
+div.tiles-container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+a.tile {
+  border: 2px solid #fff;
+  min-width: 45%;
+  height: 45vh;
+  font-size: 1.5rem;
+  display: flex;
   justify-content: center;
-  background-color: #b4e4d3;
+  align-items: center;
+  margin-bottom: 7vh;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.tile:hover {
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+a.tile:hover span {
+  display: none;
+}
+
+a.election-mapper:hover {
+  background-image: url("../assets/election-mapper.png");
+}
+
+a.lost-and-found-pets:hover {
+  background-image: url("../assets/lost-and-found-pets.png");
+}
+
+a.express-lists:hover {
+  background-image: url("../assets/expressLists.png");
+}
+
+a.windtracker:hover {
+  background-image: url("../assets/windtracker.png");
+}
+
+a.postboxes:hover {
+  background-image: url("../assets/postboxes.png");
+}
+
+a.game-of-life:hover {
+  background-image: url("../assets/game-of-life.png");
+}
+
+a.finger-dance-revolution:hover {
+  background-image: url("../assets/finger-dance-revolution.png");
+}
+
+section#contact h2 {
+  margin: 20vh 0 10vh 0;
+  text-align: center;
+}
+
+.fa {
+  font-size: 7rem;
+}
+
+section#contact div.content-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+div.contact-buttons {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
 }

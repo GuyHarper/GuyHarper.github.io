@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Guy Harper</title>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div class="jumbotron">
-        <h1>Guy Harper</h1>
-        <div class="byline">Fullstack Developer in London</div>
+<head>
+  <meta charset="utf-8">
+  <title>Guy Harper</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ab77e9b73a.js"></script>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+  <header>
+    <div class="jumbotron">
+      <h1>Guy Harper</h1>
+      <div class="byline">Fullstack Developer in London</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-bumper"></div>
+  </header>
+  <main>
+    <section id="about">
+      <div class="profile-photo"></div>
+      <div class="content-container">
+        <h2>About</h2>
+        <p>I'm a Junior Web Developer from London, currently working as a Teaching Assistant on the Web Development Immersive programme at General Assembly. Prior to this I myself was a student on the WDI programme, graduating in November 2017. I also have a PGCert in Web Design &amp; Development from Birkbeck, University of London.</p>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <div class="profile-photo"></div>
-        <div class="content-container">
-          <h2>About</h2>
-          <p>I'm a Junior Web Developer from London, currently working as a Teaching Assistant on the Web Development Immersive programme at General Assembly. Prior to this I myself was a student on the WDI programme, graduating in November 2017. I also have a PGCert in Web Design &amp; Development from Birkbeck, University of London.</p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="tiles-container">
+        <a href="http://election-mapper.herokuapp.com" class="tile election-mapper" target="_blank">
+          <span>Election mapper</span>
+        </a>
+        <a href="http://lost-and-found-pets.herokuapp.com" class="tile lost-and-found-pets" target="_blank">
+          <span>Lost &amp; Found Pets</span>
+        </a>
+        <a href="http://expressLists.herokuapp.com" class="tile express-lists" target="_blank">
+          <span>expressLists</span>
+        </a>
+        <a href="http://windtracker.herokuapp.com" class="tile windtracker" target="_blank">
+          <span>WindTracker</span>
+        </a>
+        <a href="http://postboxes-london.herokuapp.com" class="tile postboxes" target="_blank">
+          <span>Postboxes London</span>
+        </a>
+        <a href="http://guys-game-of-life.herokuapp.com" class="tile game-of-life" target="_blank">
+          <span>Guy's Game of Life</span>
+        </a>
+        <a href="http://finger-dance-revolution.herokuapp.com" class="tile finger-dance-revolution" target="_blank">
+          <span>Finger Dance Revolution</span>
+        </a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="content-container">
+        <div class="contact-buttons">
+          <a href="https://github.com/GuyHarper" aria-label="Linkedin profile"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/guy-harper" aria-label="Github profile"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
         </div>
-      </section>
-      <section id="portfolio">
-
-      </section>
-      <section id="contact">
-
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
