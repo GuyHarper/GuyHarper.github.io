@@ -44,6 +44,7 @@ nav {
 
 div.navbar-bumper {
   height: 10vh;
+  border-bottom: 2px solid #fff;
 }
 
 nav.fixed {
