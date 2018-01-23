@@ -20,7 +20,7 @@ $(() => {
   $('a').click(function(e) {
     const href = $(e.target).attr('href');
     $('html, body').animate({
-      scrollTop: $(`${href}`).offset().top - $navbar.height() + 2
+      scrollTop: $(`${href}`).offset().top - $navbar.height() - 2
     }, 1000);
   });
 
